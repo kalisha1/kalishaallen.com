@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My First Project</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href ="css/mycustom.css" rel="stylesheet">
+    <!--<link href ="css/normalize.css" rel="stylesheet">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container" >
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <!--<img class="logo" src="img/IMG_0469.JPG" alt="mepic">-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Hello, Welcome to My Digital Portfolio!</h1>
+                    
+                    <a class="btn btn-default page-scroll" href="#about"> Scroll Down!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About Me </h1>
+                    <p> <strong>Hi, I'm Kalisha Allen. As a young communications professional and 2015 graduate from the School of Arts and Letters in Advertising and Marketing at Indiana University, I am eager to develop my skills as a web developer and gain valuable work experience. I’m passionate about exploring new places and look forward exploring places outside of the country. After college I decided to spend some time traveling the country. In between my travels, I work as a bartender and cocktail waitress. I currently reside in Louisville, KY, but I am open to relocating for an opportunity to leverage my career in the tech-industry.
+                       </strong> Through this digtial portfolio, I hope to provide future employers with more insight than can be provided by a resume as to who I am and what I have to offer.
+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Skills</h1>
+                </div>
+            </div>
+        </div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Portfoilio</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Education</h1>  
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+     Gallery Section 
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>My Gallery</h1>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Me</h1>
+                </div>
+                
+            </div>
+        </div>
+    <!--<! Form-->
+        <form class= "form-inline" action="index.html" method ="post">
+    <h1> Feel free to message me anytime!</h1>
+     <fieldset>
+        <legend><span class="number"> 1 </span>Your Basic Info</legend>
+      <Label for="name">Name:</Label>      
+     <input type= "text" id="name" name="user_name">
+     <Label for="mail">Email:</Label>      
+     <input type= "email" id="mail" name="user_email">
+     <Label for="message">Message:</Label>      
+     <input type= "message" id="message" name="user_message">
+       <!--<label>Age:</label>
+      <input type="radio" id="under_13" value="under_13" name="user_age">
+       <label for="under_13" class="light"l> Under 13</label>
+      <input type="radio" id="over_13" value="over_13" name="user_age">
+       <label for="over_13" class="light"l> Over 13</label>-->
+     <!--</fieldset> 
+
+     <fieldset>-->
+       <!--<legend><span class="number"> 2 </span> Your Profile</legend>
+     <Label for="bio">Biography:</Label>      
+     <textarea id="bio" name="user_bio"></textarea>
+      <label for="job"> Job Role: </label>
+      <select id="job" name="user_job">
+        <optgroup label="Web">
+          <option value= "frontend_developer"> Front-End Developer</option>
+          <option value= "php_developer"> PHP Developer</option>
+          <option value= "python_developer"> Python Developer</option>
+          <option value= "rails_developer"> Rails Developer</option>
+          <option value= "web_designer"> Web Designer</option>
+          <option value= "wordpress_developer"> Wordpress Developer</option>
+          </optgroup>
+        
+        <optgroup label="Mobile">
+            <option value= "ios_developer"> IOS Developer</option>
+            <option value= "mobile_designer"> Mobile Designer</option>
+          </optgroup>
+        <optgroup label="Business">
+            <option value= "business_owner"> Business Owner</option>
+            <option value= "freelancer"> Freelancer</option>
+          </optgroup>
+       </select>-->
+       <input class="btn btn-default" type="submit" value="Submit">
+       <!--<button type="submit"> Sign up</button>-->
+      </fieldset> 
+      
+      </form>   
+      
+    </section>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+ 
+</body>
+     
+
+     <!--Footer -->
+     
+     <footer class="main-footer" "wrapper" >
+      <a href="http://twitter.com/kalishaallen"> <img src="icons/Twitter.svg" alt="Twitter Logo" class="social_media icon"> </a>  
+      <a href="http://facebook.com/kalishaallen"> <img src="icons/Facebook.svg" alt="Facebook Logo"class="social_media icon"> </a>
+      <a href="http://linkedin.com/kalishaallen"> <img src="icons/Linkedin.svg" alt="LinkedIn Logo"class="social_media icon"> </a>
+      <a href="http://github.com/kalisha1"> <img src="icons/Github.svg" alt="GitHub Logo"class="social_media icon"> </a>
+     <p>&copy;2017 Kalisha Allen.</p> 
+   
+   </footer>
+    
+</html>
