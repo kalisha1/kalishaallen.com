@@ -123,13 +123,14 @@ FOOTER
 I created a sticky footer using bootstrap so that footer will always be on the page
   ********************************/
 .main-footer {
-    text-align: center;
+  text-align: center;
 	background: #d9e4ea;
-	padding: 2em 0;
+	padding-top: 50px;
+  padding-bottom: 50px;
 	margin-top: 30px;
-    min-height: 89px;
+  min-height: 89px;
 }
-.wrapper {
+#wrapper {
   min-height: 89px;
 
   /* Equal to height of footer */

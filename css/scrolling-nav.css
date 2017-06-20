@@ -14,7 +14,7 @@ html {
     height: 100%;
 }
 .navbar {
-    background-color: #990;
+    background-color: #fff;
 
 }
 
@@ -35,6 +35,8 @@ html {
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
+
+
 .intro-section {
     height: 100%;
     padding-top: 150px;
@@ -48,7 +50,7 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #888;
 }
-.skills-section {
+.career-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
@@ -62,16 +64,22 @@ of those sections to manage the look and feel of the site. */
     background: #990;
 }
   
- .education-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #989;
-
-}
+ 
 .contact-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
+}
+.profile-photo{
+      display: block;
+      max-width: 100%;
+      margin :0 auto 30px;
+      border-radius:60%;
+    }
+
+    #wrapper{
+  max-width:940px;
+  margin:0 auto;
+  padding:0 5%; 
 }
