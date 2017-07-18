@@ -49,6 +49,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: #888;
+    background-repeat: no-repeat;
 }
 .career-section {
     height: 100%;
@@ -68,18 +69,40 @@ of those sections to manage the look and feel of the site. */
 .contact-section {
     height: 100%;
     padding-top: 150px;
+    padding-bottom: 60px;
     text-align: center;
     background: #fff;
 }
+
+.form-inline{
+    padding: 150px auto;
+
+
+}
 .profile-photo{
       display: block;
+      background-repeat: no-repeat;
       max-width: 100%;
       margin :0 auto 30px;
       border-radius:60%;
     }
 
-    #wrapper{
+#wrapper{
   max-width:940px;
   margin:0 auto;
   padding:0 5%; 
+}
+
+ 
+ #gallery{
+ display: flex;
+ height: 300px;
+ 
+ }
+
+.img-fluid{ 
+    width: 100%;
+    height: auto; 
+
+
 }
