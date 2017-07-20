@@ -22,34 +22,30 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--HTML internal css-->
   <style>
-  body {
+  body, h1 {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
       color: #f5f6f7;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
-
   .bg-1 { 
       background-image: url(img/wood.jpg);
-      background-image: linear-gradient(#004092, #020202, transparent); 
-      background-size: cover; 
-      box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
       background-repeat: no-repeat;
       background-size: cover;
       
       /* background-color: #1abc9c;  Green  */
       color: #ffffff;
   }
-  .col-2 { 
+  .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
   }
-  .col-3 { 
+  .bg-3 { 
       background-color: #ffffff; /* White */
       color: gray;
   }
-  .col-4 { 
+  .bg-4 { 
       background-color: #2f2f2f; /* Black Gray */
       color: #fff;
   }
@@ -57,7 +53,7 @@
       padding-top: 70px;
       padding-bottom: 70px;
   }
- .navbar {
+    .navbar {
       padding-top: 15px;
       padding-bottom: 15px;
       border: 0;
@@ -65,11 +61,10 @@
       margin-bottom: 0;
       font-size: 12px;
       letter-spacing: 5px;
-  }
+  } 
   .navbar-nav  li a:hover {
-      color: #1abc9c !important; 
+      color: #1abc9c !important;  
   }
-  
   </style>
 </head>
 <body>
@@ -88,7 +83,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item active"><a class="nav-link" href="#">ABOUT</a></li>
+        <li class="nav-item "><a class="nav-link" href="index.html">ABOUT</a></li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          CAREER
@@ -96,51 +91,42 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="resume.html">Resume</a>
           <a class="dropdown-item" href="#">Portfoilio</a>
-         </div>
          </li>
-        <li class="nav-item"><a class="nav-link" href="contact1.html">CONTACT</a></li>
+        <li class="nav-item active"><a class="nav-link" href="contact1.html">CONTACT</a></li>
       </ul>
  
   </div>
 </nav>
+<section>
+  <div class= "primary col container-fluid">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+</section> 
     
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-    <script src="js/scripts.js"></script>
-
-  <img src="img/IMG_0469.JPG" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3 class="margin">Hello. I'm Kalisha</h3>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid col-2 text-center">
-  <h3 class="margin">My Mission</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid col-3 text-center">    
-  <h3 class="margin">A bit about me.</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="img/IMG_0893.JPG" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="img/IMG_0165.JPG" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="img/IMG_3647.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
+<!-- Contact Form -->
+<section>
+  <div class="secondary-col container-fluid">
+<form class= "form-inline" action="index.html" method ="post">
+    <h1> Lets Connect </h1>
+     <fieldset>
+      <legend><span class="number"> 1 </span>I'm currently available for freelance. Do social Media/digital content marketing assistance?</legend>
+      <Label for="name">Name:</Label>      
+     <input type= "text" id="name" name="user_name">
+     <Label for="mail">Email:</Label>      
+     <input type= "email" id="mail" name="user_email">
+     <Label for="message">Message:</Label>      
+     <input type= "message" id="message" name="user_message">
+       <button type="submit"> Sign up</button>
+      </fieldset> 
+      </form>   
   </div>
-</div>
+    </section>
 
 <!-- Footer -->
-<footer class="container-fluid col-4 text-center""main-footer">
+<footer class="container-fluid bg-4 text-center""main.footer">
   	  <a href="http://twitter.com/kalishaallen"> <img src="icons/Twitter.svg" alt="Twitter Logo" class="social_media icon"> </a>  
       <a href="http://facebook.com/kalishaallen"> <img src="icons/Facebook.svg" alt="Facebook Logo"class="social_media icon"> </a>
       <a href="http://linkedin.com/kalishaallen"> <img src="icons/Linkedin.svg" alt="LinkedIn Logo"class="social_media icon"> </a>
