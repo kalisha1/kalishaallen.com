@@ -9,17 +9,15 @@
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <!-- Latest compiled and minified JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   <!--Css style sheets-->
   <link rel="stylesheet" href="css/normalize.css"> 
    <link rel="stylesheet" href="css/main.css"> 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
   <!--HTML internal css-->
   <style>
   body {
@@ -27,6 +25,10 @@
       line-height: 1.8;
       color: #f5f6f7;
   }
+    a{
+      text-decoration:none;
+
+    }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
 
@@ -69,6 +71,23 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important; 
   }
+    #imageGallery{
+	list-style:none;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	max-width: 780px;
+	text-align: center;
+}
+ul li {
+	display: inline-block;
+	padding: 8px;
+	background:white;
+	margin:10px;
+}
+ul li img {
+	display: block;
+}
   
   </style>
 </head>
@@ -121,23 +140,29 @@
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid col-3 text-center">    
-  <h3 class="margin">A bit about me.</h3><br>
+<div class="container-fluid col-3 text-center "> 
+  <h1> Image Gallery</h1> 
+  <ul class= id="imageGallery" >  
+    <li><a href=" img/IMG_0893.JPG"><img src="img/IMG_0893.JPG" width:"100" alt="Janet"><a/></li>
+    <li><a href=" img/IMG_3647.jpg"><img src="img/IMG_3647.jpg" width:"100" alt="Plants"><a/></li>
+     <li><a href=" img/IMG_0165.JPG"><img src="img/IMG_0165.JPG" width:"100" alt="Brooklyn Bridge"><a/></li>
+      </ul>
+      <!-- <h3 class="margin">A bit about me.</h3><br>
   <div class="row">
     <div class="col-sm-4">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="img/IMG_0893.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+      <img id= "imageGallery" src="img/IMG_0893.JPG" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="img/IMG_0165.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+      <img id= "imageGallery" src="img/IMG_0165.JPG" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="img/IMG_3647.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <img id= "imageGallery" src="img/IMG_3647.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
-  </div>
-</div>
+  </div> -->
+</div> 
 
 <!-- Footer -->
 <footer class="container-fluid col-4 text-center""main-footer">
@@ -151,5 +176,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-</body>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+  <div id="overlay"></div>
+  </body>
 </html>
