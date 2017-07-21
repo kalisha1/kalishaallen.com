@@ -9,63 +9,15 @@
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <!-- Latest compiled and minified JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   <!--Css style sheets-->
-  <link rel="stylesheet" href="css/normalize.css"> 
-   <link rel="stylesheet" href="css/main.css"> 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"> 
+   <link rel="stylesheet" href="css/main.css" type= "text/css" media="screen"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--HTML internal css-->
-  <style>
-  body, h1 {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-      color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-      background-image: url(img/wood.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      
-      /* background-color: #1abc9c;  Green  */
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: gray;
-  }
-  .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-    .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  } 
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;  
-  }
-  </style>
 </head>
 <body>
 
@@ -97,8 +49,9 @@
  
   </div>
 </nav>
-<section>
-  <div class= "primary col container-fluid">
+<section class="general">
+  <div id= "primary col container">
+    <h3> General Information </h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -108,9 +61,9 @@
 
 <!-- Contact Form -->
 <section>
-  <div class="secondary-col container-fluid">
+  <div id="secondary-col container">
 <form class= "form-inline" action="index.html" method ="post">
-    <h1> Lets Connect </h1>
+    <h3> Lets Connect </h3>
      <fieldset>
       <legend><span class="number"> 1 </span>I'm currently available for freelance. Do social Media/digital content marketing assistance?</legend>
       <Label for="name">Name:</Label>      
@@ -119,14 +72,14 @@
      <input type= "email" id="mail" name="user_email">
      <Label for="message">Message:</Label>      
      <input type= "message" id="message" name="user_message">
-       <button type="submit"> Sign up</button>
+       <button type="submit"> Send</button>
       </fieldset> 
       </form>   
   </div>
     </section>
 
 <!-- Footer -->
-<footer class="container-fluid bg-4 text-center""main.footer">
+<footer class="container-fluid bg-4 text-center">
   	  <a href="http://twitter.com/kalishaallen"> <img src="icons/Twitter.svg" alt="Twitter Logo" class="social_media icon"> </a>  
       <a href="http://facebook.com/kalishaallen"> <img src="icons/Facebook.svg" alt="Facebook Logo"class="social_media icon"> </a>
       <a href="http://linkedin.com/kalishaallen"> <img src="icons/Linkedin.svg" alt="LinkedIn Logo"class="social_media icon"> </a>
@@ -134,8 +87,10 @@
      <p>&copy;2017 Kalisha Allen.</p>
 </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+     <script src="js/bootstrap.min.js"></script> 
+    <script src="js/apps.js" type="text/javascript" charset="utf-8"></script>
+  <div id="overlay"></div>
 </body>
 </html>
