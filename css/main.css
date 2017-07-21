@@ -4,19 +4,19 @@
   Base Styles
 ==================================== */
 
-* {
+ * {
 	box-sizing: border-box;
 }
-html{
+ html{
 touch-action: -webkit-transition: property duration timing-function delay;
 -moz-transition: property duration timing-function delay;
 transition: property duration timing-function delay;;
 -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; 
 
 }
 
-body {
+/* body {
 	font-family: 'Rubik', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
@@ -45,7 +45,7 @@ h3 {
 
 a {
 	text-decoration: none;
-}
+} */ */
 
 /* ================================= 
   Base Layout Styles
@@ -97,10 +97,6 @@ form {
 
 }
 
-/* h1 {
-  margin: 0 0 30px 0;
-  text-align: center;
-} */
 
 input[type="text"],
 input[type="message"],
@@ -254,22 +250,22 @@ label{
 @media screen and (min-width: 480px){
 .social_media {
     position: relative;
-
-.main-footer {
+}
+.main-footer{
   
   position: fixed;
   width: 100%;
+}
+}
 
-}
-}
 
 html{
 touch-action: manipulation;
-
-
 }
+ /* for image gallery  */
+
 #overlay {
-background # rgba(0,0,0,7);
+background: rgba(0,0,0,7);
 width:100%;
 height: 100%;
 position:absolute;
@@ -281,7 +277,11 @@ text-align:center;
  #overlay img { 
    margin-top:10%;
  }
+ #overlay p {
+ color:white;
 
+
+ }
 
 
 

@@ -1,15 +1,17 @@
-//Problem: It look gross in smaller browser widths and small devices
-//Solution: To hide the text links and swap them out with a more appropriate navigation
+//Problem: When user clicks on image it goes to a dead end
+//Solution: create an overlay with a larger image- light box
 // Add overlay 
    
-var$overlay = $ ('<div id="overlay"></div>');
+var $overlay = $ ('<div id="overlay"></div>');
 var $image =("<img>");
 var $caption = $("<p></p>");
 //An image overlay
 $overlay.append(image);
+    //A caption to overlay
+$overlay.append($caption);
 // Add overlay 
 $("body").append($overlay);
-\
+
     //2.2 A caption
 
 //1. Capture the click event on link to an image
