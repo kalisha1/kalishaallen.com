@@ -37,6 +37,10 @@ body {
       font-size: 16px;
       color:black;
     }
+    h1{
+      font-family: Rubik, sans-serif;
+
+    }
   h1, h2 {
   margin: 0;
   font-weight: normal;
@@ -87,6 +91,10 @@ body {
       /* background-color: #1abc9c;  Green  */
       color: #ffffff;
   }
+  .bg-4{
+
+    background-color:#474e5d;
+  }
   .col-2 { 
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
@@ -102,24 +110,7 @@ body {
   /* .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px; */
-  }
-    /* #imageGallery{
-      border-radius: 4px;
-      padding: .5vw;
-  font-size: 0;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap; 
-  flex-flow: row wrap; 
-  display: -webkit-box;
-  display: flex;
-	list-style:none;
-	margin: 0 auto;
-	padding: 0;
-	display: block;
-	max-width: 780px;
-	text-align: center; */
+
 
 ul li {
 	display: inline-block;
@@ -255,10 +246,6 @@ select {
   border-radius: 2px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-}
 
 button {
   padding: 19px 39px 18px 39px;
@@ -352,12 +339,13 @@ label{
 } 
 /* Two Column Layout/*/
 
-.primary-col {
+.primary-col, .general {
+
         width: 50%;
         float: left;
     }
 .secondary-col {
-    display: inherit;
+    
         width: 50%;
         float: right; 
 
