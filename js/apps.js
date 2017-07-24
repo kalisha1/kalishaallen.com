@@ -15,7 +15,7 @@ $("body").append($overlay);
     //2.2 A caption
 
 //1. Capture the click event on link to an image
-$("#imageGallery src").click(function(event){
+$("#imageGallery img").click(function(event){
     event.preventDefault();
 var imageLocation =$(this).attr("src");
 //Update overlay with the image link
