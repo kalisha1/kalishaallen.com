@@ -3,7 +3,7 @@
 // Add overlay 
    
 var $overlay = $ ('<div id="overlay"></div>');
-var $image =("<img>");
+var $image = $ ("<img>");
 var $caption = $("<p></p>");
 //An image overlay
 $overlay.append($image);
