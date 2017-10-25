@@ -1,0 +1,23 @@
+body{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background: blueviolet;
+
+
+}
+h1{
+        color: white;
+        background-color: #7d7484;
+        padding: 5px;
+}
+.main_image{
+        width:200px;
+        border-radius: 50%;
+        border: solid 10px  black ;
+}
+
+.section_title{
+        text-transform: uppercase;
+
+
+}
+

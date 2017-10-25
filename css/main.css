@@ -3,31 +3,60 @@
 /* ================================= 
   Base Styles
 ==================================== */
-
+/* header { 
+  background: black;
+  /* background-image:url('images/1.png') no-repeat top center ; */
+  /* background-size: cover; 
+  overflow: hidden;
+  /* box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  
+*/ 
+  
  * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
 }
-*, *:before, *:after {
+/* *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box; */
  /* html{
 touch-action: -webkit-transition: property duration timing-function delay;
 -moz-transition: property duration timing-function delay;
 -transition: property duration timing-function delay;
 -webkit-text-size-adjust: 100%;
 -ms-text-size-adjust: 100%;  */
-}
+
 html{
   width: 100%;
     height: 100%;}
+
+
 body {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
-      color: #f5f6f7;
+      
+    
+    }
+
+  .bg-1{ 
+    /* background-color: #000000; */
+    background-image:url(../images/IMG_0165.jpg);
+    background-position: 100% 100%;
+    background-size: cover; 
+    overflow: hidden;
+    /* box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8); */
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    background-attachment: fixed;
   }
+
+    
+  
+    
     a{
       text-decoration:none;
 
@@ -37,27 +66,39 @@ body {
       font-size: 16px;
       color:black;
     }
+
     h1{
-      font-family: Rubik, sans-serif;
+      font-family: sans-serif;
 
     }
+   
+    
   h1, h2 {
   margin: 0;
   font-weight: normal;
-  font-size: 3em;
+
+}
+/* .slogan{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1em;
+  color:#7d7484; */
+
+.welcome{
+  font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  color: white;
+
 }
    h3{
     text-align:center;
    }
-  .main-header {
+  /* .main-header {
   text-align:center;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	background: #005689;
   margin-bottom: 30px;
-  }
+  } */
   .main-footer {
-  background: #d9e4ea;
 	text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -69,6 +110,27 @@ body {
   height:40px;
   margin: 0 5px;
               }
+
+ #statement{
+  color: whitesmoke;
+
+}
+.mission{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+}
+.img-fluid{
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  border: 6px solid white;
+  transition: all .5s;
+}
+.container-fluid .img-fluid:hover {
+  transform: scale(2.5) rotate(360deg);
+}
+
 /* ================================= 
   About Layout Styles
 ==================================== */
@@ -77,36 +139,32 @@ body {
   img  {
     max-width:100%;
     height:auto;
-}
+  }
 
-  .margin {margin-bottom: 45px;}
+
+  .margin {margin-bottom: 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+
   
-  .bg-1 { 
-      background-image: linear-gradient(#004092, #020202, transparent); 
-      background-size: cover; 
-      box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8);
-      background-repeat: no-repeat;
-      background-size: cover;
-      
-      /* background-color: #1abc9c;  Green  */
-      color: #ffffff;
   }
   .bg-4{
-
-    background-color:#474e5d;
-  }
-  .col-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .col-3 { 
-      background-color: #ffffff; /* White */
-      color: gray;
-  }
-  .col-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
+    
+        background-color:#474e5d;
+      }
+      .col-2 { 
+          background-color: #474e5d; /* Dark Blue */
+          color: #ffffff;
+      }
+      .col-3 { 
+          background-color: #ffffff; /* White */
+          color: gray;
+      }
+      .col-4 { 
+          background-color: #2f2f2f; /* Black Gray */
+          color: #fff;
+      }
+  
+      
   /* .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px; */
@@ -123,7 +181,7 @@ ul li img {
 }
    /* for image gallery  */
 
- #overlay{
+ /* #overlay{
 background: rgba(0,0,0,7);
 width:100%;
 height: 100%;
@@ -140,14 +198,15 @@ text-align:center;
  color:white;
 
   /* fixed images display on screen /*/
- }
-.wrapper{
+ /* } */ 
+
+ .wrapper{
 max-width:940px;
   margin:0 auto;
   padding:0 5%; 
 
 }
-#imageGallery {
+/* #imageGallery {
 
     margin:0;
     padding:0;
@@ -165,9 +224,9 @@ max-width:940px;
   margin:0;
   padding:5%;
   font-size:0.75em;
-  color: #999;
+  color: #999; */
    
-}
+
   
 
 
@@ -189,15 +248,22 @@ Navagation
 
 
 /* ---- Layout Containers ---- */
+.img-responsive {
+  display: center-block;
+
+}
 
  .container {
+
 	padding-left: 1em;
 	padding-right: 1em;
 } 
 .container-fluid {
+  
       padding-top: 70px;
       padding-bottom: 70px;
-  }
+    
+}
     
 
 /* ================================= 
@@ -316,7 +382,7 @@ label{
 		max-width: 1150px;
 		margin: 0 auto;
 
-	} */
+	} col
  .name,
 
 .main-nav{
